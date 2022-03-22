@@ -16,6 +16,10 @@ export default function PlantDoctor() {
     e.preventDefault();
     setQuestionState("yes");
   };
+  const handleReset = (e) => {
+    e.preventDefault();
+    setQuestionState("");
+  };
 
   useEffect(() => {
     setQuestionState("");
@@ -51,6 +55,9 @@ export default function PlantDoctor() {
           {questionState === "yes" ? (
             <>
               <h1>Overwatered</h1>
+              <div className={styles.card} onClick={handleReset}>
+                Diagnose another Plant
+              </div>
             </>
           ) : null}
         </div>
@@ -58,14 +65,15 @@ export default function PlantDoctor() {
           {questionState === "no" ? (
             <>
               <h1>Underwatered</h1>
+              <div className={styles.card} onClick={handleReset}>
+                Diagnose another Plant
+              </div>
             </>
           ) : null}
         </div>
         <Link href="/">
           <a>
-            <div className={styles.card}>
-              <h1>back to main page</h1>
-            </div>
+            <div className={styles.card}>back to main page</div>
           </a>
         </Link>
       </main>
