@@ -12,6 +12,12 @@
   {
     "name": "PlantReaper",
     "type": "counter",
-    "message": ["Bummer,", "Aw, shucks!"]
+    "message": [
+      "Bummer,",
+      "Aw, shucks!",
+      "Big sad!",
+      "You did it again!",
+      "Oh dear!"
+    ]
   }
 ]

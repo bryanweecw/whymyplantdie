@@ -18,7 +18,7 @@ export default function Home() {
     } else {
       setMessage("");
     }
-  }, []);
+  }, [deadplants]);
 
   return (
     <div className>
