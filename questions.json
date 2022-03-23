@@ -1,0 +1,17 @@
+[
+  {
+    "name": "PlantDoctor",
+    "type": "quiz",
+    "questions": [
+      {
+        "question": "Did you water your plant",
+        "answerOptions": [{ "answer": "yes" }, { "answer": "no" }]
+      }
+    ]
+  },
+  {
+    "name": "PlantReaper",
+    "type": "counter",
+    "message": ["Bummer,", "Aw, shucks!"]
+  }
+]

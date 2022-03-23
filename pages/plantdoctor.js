@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import data from "../../questions.json";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 

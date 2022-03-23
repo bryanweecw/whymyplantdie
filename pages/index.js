@@ -1,5 +1,5 @@
 import Head from "next/head";
-import data from "../../questions.json";
+import data from "../questions.json";
 import { useDeadPlantWrapper } from "../context/deadplantcontext";
 import { useEffect, useState } from "react";
 import Link from "next/link";
