@@ -33,30 +33,25 @@ export default function Home() {
 
         <div className="">
           <h2>PLANTS KILLED</h2>
-          <p>
-            {message} {deadplants} plants killed
-          </p>
+          <div>
+            <p>
+              {message} {deadplants} plants killed
+            </p>
+            <button className="" onClick={resetDeadPlants}>
+              <h1>RESET</h1>
+            </button>
+          </div>
         </div>
         <div className="">
-          <div className="" onClick={resetDeadPlants}>
-            <p>RESET</p>
-          </div>
-
-          {data.map((ele) => {
-            if (ele.type == "counter") {
-              return (
-                <div onClick={addDeadPlant} className="">
-                  <h1>HELP MY PLANT DEAD!</h1>
-                </div>
-              );
-            }
-          })}
+          <button onClick={addDeadPlant} className="">
+            <h1>HELP MY PLANT DEAD!</h1>
+          </button>
         </div>
         <Link href="/plantdoctor">
           <a>
-            <div className="">
+            <button className="">
               <h1>HELP MY PLANT DYING</h1>
-            </div>
+            </button>
           </a>
         </Link>
       </main>

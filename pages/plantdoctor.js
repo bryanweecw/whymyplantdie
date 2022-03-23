@@ -39,12 +39,10 @@ export default function PlantDoctor() {
           {questionState === "" ? (
             <div>
               <h1>Did you water?</h1>
-              <div className="" onClick={handleYes}>
+              <button className="" onClick={handleYes}>
                 Yes
-              </div>
-              <div className="" onClick={handleNo}>
-                No
-              </div>
+              </button>
+              <button onClick={handleNo}>No</button>
             </div>
           ) : null}
         </div>
@@ -52,9 +50,9 @@ export default function PlantDoctor() {
           {questionState === "yes" ? (
             <>
               <h1>Overwatered</h1>
-              <div className="" onClick={handleReset}>
+              <button className="" onClick={handleReset}>
                 Diagnose another Plant
-              </div>
+              </button>
             </>
           ) : null}
         </div>
@@ -62,15 +60,15 @@ export default function PlantDoctor() {
           {questionState === "no" ? (
             <>
               <h1>Underwatered</h1>
-              <div className="" onClick={handleReset}>
+              <button className="" onClick={handleReset}>
                 Diagnose another Plant
-              </div>
+              </button>
             </>
           ) : null}
         </div>
         <Link href="/">
           <a>
-            <div className="">back to main page</div>
+            <button className="">back to main page</button>
           </a>
         </Link>
       </main>
