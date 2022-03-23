@@ -40,9 +40,11 @@ export default function PlantDoctor() {
             <div>
               <h1>Did you water?</h1>
               <button className="" onClick={handleYes}>
-                Yes
+                <h2>Yes</h2>
               </button>
-              <button onClick={handleNo}>No</button>
+              <button className="" onClick={handleNo}>
+                <h2>No</h2>
+              </button>
             </div>
           ) : null}
         </div>
@@ -51,7 +53,7 @@ export default function PlantDoctor() {
             <>
               <h1>Overwatered</h1>
               <button className="" onClick={handleReset}>
-                Diagnose another Plant
+                <h2>Diagnose another Plant</h2>
               </button>
             </>
           ) : null}
@@ -61,7 +63,7 @@ export default function PlantDoctor() {
             <>
               <h1>Underwatered</h1>
               <button className="" onClick={handleReset}>
-                Diagnose another Plant
+                <h2>Diagnose another Plant</h2>
               </button>
             </>
           ) : null}
