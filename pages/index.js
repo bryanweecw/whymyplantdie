@@ -15,11 +15,11 @@ export default function Home() {
   if (deadplants > 0) {
     useEffect(() => {
       setMessage(data[1].message[getRndInteger(0, data[1].message.length)]);
-    });
+    }, []);
   } else {
     useEffect(() => {
       setMessage("");
-    });
+    }, []);
   }
   return (
     <div className>
