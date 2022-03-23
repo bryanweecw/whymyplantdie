@@ -12,15 +12,14 @@ export default function Home() {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
-  if (deadplants > 0) {
-    useEffect(() => {
+  useEffect(() => {
+    if (deadplants > 0) {
       setMessage(data[1].message[getRndInteger(0, data[1].message.length)]);
-    }, []);
-  } else {
-    useEffect(() => {
+    } else {
       setMessage("");
-    }, []);
-  }
+    }
+  }, []);
+
   return (
     <div className>
       <Head>
